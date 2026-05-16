@@ -11,6 +11,8 @@
 @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
 
 .content { flex: 1; position: relative; z-index: 1; }
+.logoWrap { margin-bottom: 20px; }
+.heroLogo { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 32px rgba(242,167,195,.4); border: 3px solid #fff; }
 .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--rose); background: rgba(242,167,195,.15); border: 1px solid rgba(242,167,195,.4); border-radius: 100px; padding: 6px 16px; margin-bottom: 24px; }
 .title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 700; line-height: 1.1; margin-bottom: 20px; color: var(--text); }
 .grad { background: linear-gradient(135deg, var(--rose), var(--pink), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }

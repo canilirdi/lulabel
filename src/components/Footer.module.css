@@ -2,6 +2,7 @@
 .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 .inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
 
+.logoImg { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin-bottom: 14px; border: 2px solid rgba(255,255,255,.15); display: block; }
 .logo { font-family: 'Playfair Display', serif; font-size: 2rem; font-style: italic; color: var(--pink); margin-bottom: 14px; }
 .desc { font-size: .88rem; color: rgba(255,255,255,.5); line-height: 1.7; max-width: 260px; margin-bottom: 20px; }
 .socials { display: flex; gap: 12px; }

@@ -6,7 +6,9 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.inner}>
           <div className={styles.brand}>
-            <div className={styles.logo}>lulabel</div>
+            <img src="/logo.jpg" alt="Lulabel" className={styles.logoImg}
+              onError={e => { e.currentTarget.style.display='none'; e.currentTarget.nextSibling.style.display='block' }} />
+            <div className={styles.logo} style={{ display: 'none' }}>lulabel</div>
             <p className={styles.desc}>Luxury childrenswear, curated with love in Albania. Official stockist of the world's finest kids' fashion brands.</p>
             <div className={styles.socials}>
               <a href="https://www.instagram.com/lulabel.al/" target="_blank" rel="noopener" className={styles.social}>

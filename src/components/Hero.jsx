@@ -12,6 +12,14 @@ export default function Hero() {
       <div className={styles.bubble} style={{ width:200, height:200, bottom:'5%', right:'3%', background:'rgba(240,208,128,.15)' }} />
 
       <div className={styles.content}>
+        <div className={styles.logoWrap}>
+          <img
+            src="/logo.jpg"
+            alt="Lulabel"
+            className={styles.heroLogo}
+            onError={e => { e.currentTarget.style.display='none' }}
+          />
+        </div>
         <div className={styles.eyebrow}>✨ New Summer Collection 2025</div>
         <h1 className={styles.title}>
           Little Ones,<br />
