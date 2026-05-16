@@ -1,0 +1,17 @@
+.section { padding: 80px 0; background: var(--nude); }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.header { text-align: center; margin-bottom: 48px; }
+.tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--rose); margin-bottom: 10px; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: var(--text); margin-bottom: 12px; }
+.sub { font-size: .95rem; color: var(--muted); max-width: 480px; margin: 0 auto; }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.card { border-radius: 16px; padding: 28px 20px; text-align: center; border: 1px solid rgba(0,0,0,.06); transition: transform var(--ease), box-shadow var(--ease); }
+.card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+.brandName { font-size: 1.2rem; font-weight: 900; letter-spacing: .12em; margin-bottom: 6px; }
+.brandFull { font-size: .75rem; color: var(--muted); }
+
+.note { text-align: center; margin-top: 40px; font-size: .82rem; color: var(--muted); letter-spacing: .04em; }
+
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .grid { grid-template-columns: repeat(2, 1fr); } }

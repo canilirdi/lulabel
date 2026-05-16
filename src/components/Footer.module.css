@@ -1,0 +1,21 @@
+.footer { background: var(--text); color: #fff; padding: 64px 0 32px; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+
+.logo { font-family: 'Playfair Display', serif; font-size: 2rem; font-style: italic; color: var(--pink); margin-bottom: 14px; }
+.desc { font-size: .88rem; color: rgba(255,255,255,.5); line-height: 1.7; max-width: 260px; margin-bottom: 20px; }
+.socials { display: flex; gap: 12px; }
+.social { width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.6); transition: var(--ease); }
+.social:hover { background: var(--rose); color: #fff; }
+
+.col h4 { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: rgba(255,255,255,.4); margin-bottom: 18px; }
+.col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.col ul a { font-size: .88rem; color: rgba(255,255,255,.6); transition: color var(--ease); }
+.col ul a:hover { color: var(--pink); }
+.contact { margin-top: 20px; display: flex; flex-direction: column; gap: 6px; font-size: .85rem; color: rgba(255,255,255,.5); }
+.contact a { color: var(--pink); }
+
+.bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.08); font-size: .78rem; color: rgba(255,255,255,.35); flex-wrap: wrap; gap: 12px; }
+
+@media (max-width: 900px) { .inner { grid-template-columns: 1fr 1fr; gap: 32px; } }
+@media (max-width: 500px) { .inner { grid-template-columns: 1fr; } }

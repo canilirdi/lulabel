@@ -1,0 +1,36 @@
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  padding: 12px 0; background: var(--cream);
+  transition: box-shadow var(--ease);
+}
+.nav.scrolled { box-shadow: 0 2px 20px rgba(242,167,195,.2); }
+.inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 24px; }
+
+.logo { flex-shrink: 0; }
+.logoImg { height: 52px; width: 52px; object-fit: cover; border-radius: 50%; display: block; }
+.logoText { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-style: italic; color: var(--rose); }
+
+.links { display: flex; gap: 28px; list-style: none; flex: 1; justify-content: center; }
+.links a { font-size: .82rem; font-weight: 500; color: var(--text); letter-spacing: .06em; text-transform: uppercase; transition: color var(--ease); }
+.links a:hover { color: var(--rose); }
+.sale { color: var(--rose) !important; font-weight: 700 !important; }
+
+.actions { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.iconBtn { background: none; border: none; cursor: pointer; color: var(--text); padding: 6px; border-radius: 8px; transition: color var(--ease); }
+.iconBtn:hover { color: var(--rose); }
+.cartBtn { position: relative; background: none; border: none; cursor: pointer; color: var(--text); padding: 6px; border-radius: 8px; transition: color var(--ease); }
+.cartBtn:hover { color: var(--rose); }
+.badge { position: absolute; top: 0; right: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--rose); color: #fff; font-size: .6rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); border-radius: 2px; }
+
+.mobile { position: fixed; top: 0; left: 0; bottom: 0; width: 280px; background: var(--cream); z-index: 300; padding: 80px 32px 40px; display: flex; flex-direction: column; gap: 28px; transform: translateX(-100%); transition: transform var(--ease); box-shadow: 4px 0 24px rgba(0,0,0,.08); }
+.mobile.mobileOpen { transform: translateX(0); }
+.mobile a { font-size: 1.1rem; font-weight: 600; color: var(--text); letter-spacing: .04em; }
+.mobile a:hover { color: var(--rose); }
+.saleMobile { color: var(--rose) !important; }
+.closeBtn { position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--muted); }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.3); z-index: 250; }
+
+@media (max-width: 900px) { .links { display: none; } .hamburger { display: flex; } }

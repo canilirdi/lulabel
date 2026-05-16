@@ -1,0 +1,16 @@
+.section { padding: 80px 0; background: var(--cream-2); }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.header { text-align: center; margin-bottom: 48px; }
+.tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--rose); margin-bottom: 10px; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: var(--text); }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card { background: #fff; border-radius: 24px; padding: 32px 24px; text-align: center; border: 1px solid rgba(242,167,195,.15); transition: transform var(--ease), box-shadow var(--ease); cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(242,167,195,.25); }
+.icon { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 8px; }
+.label { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--text); }
+.desc { font-size: .8rem; color: var(--muted); }
+.arrow { font-size: .78rem; font-weight: 600; color: var(--rose); letter-spacing: .04em; margin-top: 4px; }
+
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .grid { grid-template-columns: 1fr 1fr; gap: 12px; } .card { padding: 20px 16px; } }

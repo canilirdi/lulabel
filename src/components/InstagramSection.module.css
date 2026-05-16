@@ -1,0 +1,17 @@
+.section { padding: 80px 0; background: var(--cream-2); }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.header { text-align: center; margin-bottom: 40px; }
+.tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--rose); margin-bottom: 8px; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 700; color: var(--text); margin-bottom: 20px; }
+.igBtn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; border-radius: 100px; font-size: .85rem; font-weight: 600; background: linear-gradient(135deg, #f9a8c9, #c97eb4, #9b59b6); color: #fff; transition: var(--ease); }
+.igBtn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,126,180,.35); color: #fff; }
+
+.grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.post { aspect-ratio: 1; border-radius: 16px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; cursor: pointer; transition: transform var(--ease); }
+.post:hover { transform: scale(1.03); }
+.post:hover .postOverlay { opacity: 1; }
+.postEmoji { font-size: 3rem; }
+.postOverlay { position: absolute; inset: 0; background: rgba(212,96,138,.75); display: flex; align-items: center; justify-content: center; color: #fff; font-size: .8rem; font-weight: 600; opacity: 0; transition: opacity var(--ease); border-radius: 16px; }
+
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 500px) { .grid { grid-template-columns: repeat(3, 1fr); gap: 8px; } }
